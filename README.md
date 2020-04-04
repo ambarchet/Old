@@ -1,6 +1,11 @@
+<style type="text/css">
 
-<h1><u>RetailManagementTool</u></h1>
+    h1 span {
+        border-bottom:thick dotted #ff0000;
+      }
 
+  </style>
+<h1><span>Underline me</span> Underline me not!</h1>
 
 <h2>Aaron Barchet</h2>
 
