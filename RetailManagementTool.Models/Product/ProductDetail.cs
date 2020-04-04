@@ -15,11 +15,11 @@ namespace RetailManagementTool.Models.Product
         [Display(Name = "Department")]
         public string DepartmentNumber { get; set; }
 
-        public int Style { get; set; }
+        public string Style { get; set; }
 
-        public int SKU { get; set; }
+        public string SKU { get; set; }
 
-        public int Color { get; set; }
+        public string Color { get; set; }
 
         public string Size { get; set; }
 
@@ -27,12 +27,14 @@ namespace RetailManagementTool.Models.Product
         public string ProductName { get; set; }
 
         [Display(Name = "Ticket Price")]
+        [DataType(DataType.Currency)]
         public decimal TicketPrice { get; set; }
 
         [Display(Name = "Promotion")]
         public string PromotionDescription { get; set; }
 
         [Display(Name = "Sales Price")]
+        [DataType(DataType.Currency)]
         public decimal SalesPrice { get; set; }
 
         [Display(Name = "Zone")]

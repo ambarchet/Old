@@ -54,11 +54,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DepartmentService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RetailManagementTool.Data\RetailManagementTool.Data.csproj">
+      <Project>{5a7ec79f-d55f-4510-bb5f-5611a8d6fd6a}</Project>
+      <Name>RetailManagementTool.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RetailManagementTool.Models\RetailManagementTool.Models.csproj">
+      <Project>{F8C3203B-5595-4A10-A4EC-E19B71DB93C9}</Project>
+      <Name>RetailManagementTool.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -15,9 +15,9 @@ namespace RetailManagementTool.Models.Product
         [Display(Name = "Department")]
         public string DepartmentNumber { get; set; }
 
-        public int Style { get; set; }
+        public string Style { get; set; }
 
-        public int SKU { get; set; }
+        public string SKU { get; set; }
 
         [Display(Name = "Name")]
         public string ProductName { get; set; }
