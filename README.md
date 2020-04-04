@@ -3,6 +3,7 @@
 <h2>Aaron Barchet</h2>
 
 <h3><u>Description</u></h3>
+<hr>
 
 <p>My goal is to create an MVC application for retail stores to be able to manage their products, as it relates to promotions and zone allocations. The target audience would be retail stores of any kind. This application could be used by, both, home office and associates on the sales floor. As someone who has worked in the retail industry, I realize how important it is to get information to customer-facing associates in as quick and user-friendly a manner as possible.</p>
 
