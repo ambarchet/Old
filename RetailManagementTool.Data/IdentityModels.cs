@@ -35,6 +35,7 @@ namespace RetailManagementTool.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Promotion> Promotions { get; set; }
+        public DbSet<Size> Sizes { get; set; }
         public DbSet<Zone> Zones { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

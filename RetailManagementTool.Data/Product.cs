@@ -25,12 +25,12 @@ namespace RetailManagementTool.Data
         [Required]
         [MinLength(7, ErrorMessage = "Style must be at least 7 characters long.")]
         [MaxLength(50, ErrorMessage = "There are too many characters in this field.")]
-        public int Style { get; set; }
+        public string Style { get; set; }
 
         [Required]
         [MinLength(7, ErrorMessage = "SKU must be at least 7 characters long.")]
         [MaxLength(50, ErrorMessage = "There are too many characters in this field.")]
-        public int SKU { get; set; }
+        public string SKU { get; set; }
 
         [Required]
         [MinLength(2, ErrorMessage = "Name must be at least 2 characters long.")]
@@ -41,7 +41,7 @@ namespace RetailManagementTool.Data
         [Required]
         [MinLength(2, ErrorMessage = "Field must be at least 2 characters long.")]
         [MaxLength(10, ErrorMessage = "There are too many characters in this field.")]
-        public int Color { get; set; }
+        public string Color { get; set; }
 
         // public SizeSelections Size { get; set; }
         [Required]
@@ -52,12 +52,12 @@ namespace RetailManagementTool.Data
 
 
         [Required]
-        [MinLength(2, ErrorMessage = "Field must be at least 2 characters long.")]
-        [MaxLength(50, ErrorMessage = "There are too many characters in this field.")]
+        [DataType(DataType.Currency)]
         [Display(Name = "Ticket Price")]
         public decimal TicketPrice { get; set; }
 
         [Required]
+        [DataType(DataType.Currency)]
         [Display(Name = "Sales Price")]
         public decimal SalesPrice { get; set; }
 
@@ -71,6 +71,5 @@ namespace RetailManagementTool.Data
         public int? ProductZoneId { get; set; }
         public virtual Zone ProductZone { get; set; }
 
-        public int ZoneId { get; set; }
     }
 }
