@@ -7,6 +7,7 @@
 <h2>Database</h2>
 
 <h4>Product</h4>
+<ul>
 Id [pk]
 Department int [Foreign Key of Department Id]
 SKU string
@@ -18,7 +19,7 @@ TicketPrice decimal
 SalePrice decimal
 Promotion int [Foreign Key of Promotion Id]
 ZoneLocation int [Foreign Key of Zone Id]
-
+</ul>
 
 <h4>Department</h4>
 Id int [pk]
