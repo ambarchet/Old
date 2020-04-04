@@ -3,6 +3,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin;
 using Owin;
 using RetailManagementTool.Data;
+using System.Data.Entity.Migrations;
 
 [assembly: OwinStartupAttribute(typeof(RetailManagementTool.WebMVC.Startup))]
 namespace RetailManagementTool.WebMVC
@@ -12,11 +13,13 @@ namespace RetailManagementTool.WebMVC
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
-            createRolesandUsers();
+            CreateRolesandUsers();
+            Seed();
         }
 
+
         //Create default User roles and Admin user for login  
-        private void createRolesandUsers()
+        private void CreateRolesandUsers()
         {
             ApplicationDbContext context = new ApplicationDbContext();
 
@@ -55,6 +58,31 @@ namespace RetailManagementTool.WebMVC
                 roleManager.Create(role);
 
             }
+        }
+        private void Seed()
+        {
+
+            ApplicationDbContext context = new ApplicationDbContext();
+
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+            var userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+
+            context.Departments.AddOrUpdate
+                (
+                x => x.DepartmentName,
+                new Department()
+                {
+                    DepartmentNumber = "94",
+                    DepartmentName = "Dresses",
+                },
+                new Department()
+                {
+                    DepartmentNumber = "06",
+                    DepartmentName = "Accessories"
+                }
+                );
+            context.SaveChanges();
+
         }
     }
 }
