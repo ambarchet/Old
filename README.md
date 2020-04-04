@@ -53,8 +53,6 @@ Id int [pk]
 Name string
 UserId int
 
-       [MinLength(2, ErrorMessage = "Name must be at least 2 characters long.")]
-        [MaxLength(50, ErrorMessage = "There are too many characters in this field.")]
 
 
 
