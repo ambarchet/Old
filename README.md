@@ -8,7 +8,7 @@
 
 <h4>Product</h4>
 <ul>
-Id [pk]
+  <li>Id [pk]</li>
 Department int [Foreign Key of Department Id]
 SKU string
 Style string
