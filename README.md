@@ -1,22 +1,18 @@
 <h1>RetailManagementTool</h1>
 
-<h2>Aaron Barchet</h2>
+<h2>Description</h2>
 
-<h3><u>Description</u></h3>
-<hr>
+<p>My goal was to create an MVC application for retail stores to be able to manage their products, as it relates to promotions and zone allocations. The target audience would be retail stores of any kind. This application could be used by, both, home office and associates on the sales floor. As someone who has worked in the retail industry, I realize how important it is to get information to customer-facing associates in as quick and user-friendly a manner as possible.</p>
 
-<p>My goal is to create an MVC application for retail stores to be able to manage their products, as it relates to promotions and zone allocations. The target audience would be retail stores of any kind. This application could be used by, both, home office and associates on the sales floor. As someone who has worked in the retail industry, I realize how important it is to get information to customer-facing associates in as quick and user-friendly a manner as possible.</p>
+<h2>Database</h2>
 
-<h3><u>Database</u></h3>
-<p>This is where your team writes out how your database will look like. List out each table, the columns (include the dataTypes), and the database associations your project will have on the server-side.</p>
-
-Product
+<h4>Product</h4>
 Id [pk]
 Department int [Foreign Key of Department Id]
-SKU int
-Style int
-Color int
-Size enum
+SKU string
+Style string
+Color string
+Size int [Foreign Key of Size Id]
 Name string
 TicketPrice decimal
 SalePrice decimal
@@ -24,24 +20,28 @@ Promotion int [Foreign Key of Promotion Id]
 ZoneLocation int [Foreign Key of Zone Id]
 
 
-Department
+<h4>Department</h4>
 Id int [pk]
 Name string
 Promotion int [Foreign Key of Promotion Id]
+List<Product> DepartmentProducts
 
-Zone
+<h4>Zone</h4>
 Id int [pk]
 Name string
 
-Promotion
+<h4>Promotion</h4>
 Id int [pk]
 Description string
 
-Role
+<h4>Role</h4>
 Id int [pk]
 Name string
 UserId int
 
+<h4>Size</h4>
+Id int [pk]
+Name string
 
 
 
@@ -60,3 +60,11 @@ FUNCTIONALITY I WOULD LIKE TO ACCOMPLISH:
 6.	Get all products by Promotion
 7.	Edit product by Id
 8.	Edit multiple products' promotion by Department #
+
+<h2>Acknowledgements</h2>
+
+<h4>User Roles</h4>
+https://www.c-sharpcorner.com/UploadFile/asmabegam/Asp-Net-mvc-5-security-and-creating-user-role/
+
+<h4>Seeding</h4>
+https://stackoverflow.com/questions/51819260/seeding-data-in-startup-cs
