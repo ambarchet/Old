@@ -1,25 +1,15 @@
 
-<h1>RetailManagementTool<h1/>
+<h1><u>RetailManagementTool</u></h1>
 
 
-Aaron Barchet
-Table of Contents
+<h2>Aaron Barchet</h2>
 
-Table of Contents
-Mission Statement
-Database
-Features
-Trello Link
-Wireframe
-Schedule
-Final Notes
+<h3><u>Description</u></h3>
 
+<p>My goal is to create an MVC application for retail stores to be able to manage their products, as it relates to promotions and zone allocations. The target audience would be retail stores of any kind. This application could be used by, both, home office and associates on the sales floor. As someone who has worked in the retail industry, I realize how important it is to get information to customer-facing associates in as quick and user-friendly a manner as possible.</p>
 
-
-Mission Statement
-My goal is to create an application for retail stores to be able to manage their products, as it relates to promotions and zone allocations. The target audience would be retail stores of any kind. This application could be used by, both, home office and associates on the sales floor. As someone who has worked in the retail industry, I realize how important it is to get information to customer-facing associates in as quick and user-friendly a manner as possible.
-Database
-This is where your team writes out how your database will look like. List out each table, the columns (include the dataTypes), and the database associations your project will have on the server-side.
+<h3><u>Database</u></h3>
+<p>This is where your team writes out how your database will look like. List out each table, the columns (include the dataTypes), and the database associations your project will have on the server-side.</p>
 
 Product
 Id [pk]
