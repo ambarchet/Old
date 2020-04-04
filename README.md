@@ -1,8 +1,4 @@
-<title>h1 underline</title>
-
-  <style type="text/css"></style>
-
-  <h1><span>Underline me</span> Underline me not!</h1>
+<h1>RetailManagementTool</h1>
 
 <h2>Aaron Barchet</h2>
 
