@@ -63,10 +63,27 @@ namespace RetailManagementTool.Services
                     DepartmentId = entity.DepartmentId,
                     DepartmentNumber = entity.DepartmentNumber,
                     DepartmentName = entity.DepartmentName,
-                    PromotionDescription = entity.DepartmentPromotion.PromotionDescription
+                    //PromotionDescription = entity.DepartmentPromotion.PromotionDescription
                 };
             }
         }
+
+        //Edit GET BY ID
+        public DepartmentEdit DepartmentEdiGetById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx.Departments.Single(e => e.DepartmentId == id);
+                return new DepartmentEdit
+                {
+                    DepartmentId = entity.DepartmentId,
+                    DepartmentNumber = entity.DepartmentNumber,
+                    DepartmentName = entity.DepartmentName,
+                   // PromotionDescription = entity.DepartmentPromotion.PromotionDescription
+                };
+            }
+        }
+
 
         //UPDATE
         public bool UpdateDepartment(DepartmentEdit model)
@@ -80,7 +97,7 @@ namespace RetailManagementTool.Services
 
                 entity.DepartmentNumber = model.DepartmentNumber;
                 entity.DepartmentName = entity.DepartmentName;
-                entity.DepartmentPromotion.PromotionDescription = model.PromotionDescription;
+              //  entity.DepartmentPromotion.PromotionDescription = model.PromotionDescription;
 
                 return ctx.SaveChanges() == 1;
             }
