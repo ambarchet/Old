@@ -8,6 +8,8 @@
 
 ![image](https://user-images.githubusercontent.com/54337556/79058735-a1597600-7c3f-11ea-9fec-840a16da3f29.png)
 
+https://docs.google.com/document/d/e/2PACX-1vTBKNs5qwMTI1_0aT9BtyjeoiUwVVLevOcDFH6dnyJetVFhOF4Gm8MUM3BMWhHpvVJpwWvR1nUnAHn9/pub
+
 <h2>DATABASE</h2>
 
 <h4>Product</h4>
