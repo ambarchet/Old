@@ -4,9 +4,8 @@
 
 <p>My goal was to create an MVC application for retail stores to be able to manage their products, as it relates to promotions and zone allocations. The target audience would be retail stores of any kind. This application could be used by, both, home office and associates on the sales floor. As someone who has worked in the retail industry, I realize how important it is to get information to customer-facing associates in as quick and user-friendly a manner as possible.</p>
 
-![image](https://user-images.githubusercontent.com/54337556/79058690-33ad4a00-7c3f-11ea-8f13-8347690f3748.png)
-
-![image](https://user-images.githubusercontent.com/54337556/79058735-a1597600-7c3f-11ea-9fec-840a16da3f29.png)
+<a id="Local db RMT" href="https://docs.google.com/document/d/e/2PACX-1vTBKNs5qwMTI1_0aT9BtyjeoiUwVVLevOcDFH6dnyJetVFhOF4Gm8MUM3BMWhHpvVJpwWvR1nUnAHn9/pub" download target="blank">Local db for RMT
+                          </a>
 
 https://docs.google.com/document/d/e/2PACX-1vTBKNs5qwMTI1_0aT9BtyjeoiUwVVLevOcDFH6dnyJetVFhOF4Gm8MUM3BMWhHpvVJpwWvR1nUnAHn9/pub
 
